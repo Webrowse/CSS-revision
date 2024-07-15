@@ -45,6 +45,7 @@ body{
     background-image: linear-gradient(to right, $color-light, $color-dark);
     color:transparent;
     -webkit-background-clip: text;
+    background-clip: text;
     transition: all 0.2s;
     letter-spacing: 0.2px;
     &:hover{
