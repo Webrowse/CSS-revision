@@ -1,6 +1,6 @@
 .navigation{
     &__checkbox {
-        visibility: hidden;
+        display: none;
     }
 
     &__button {
@@ -50,11 +50,11 @@
         transform: translate(-50%,-50%);
         list-style: none;
         text-align: center;
-     width:100%;
+        width:100%;
     }
 
     &__item{
-
+        margin: 1rem;
     }
 
     &__link{
@@ -111,7 +111,7 @@
             transition: all .2s;
 
         }
-        &::before{top:-.8rem;}
+        &::before{top:-.8rem; transform-origin: center;}
         &::after{top: .8rem;}
     }
 
@@ -127,10 +127,10 @@
     }
     &__checkbox:checked + &__button &__icon::before{
         top: 0;
-        transform: rotate(135deg);
+        transform: rotate(45deg);
     }
     &__checkbox:checked + &__button &__icon::after{
         top:0;
-        transform: rotate(45deg);
+        transform: rotate(-45deg);
     }
 }
